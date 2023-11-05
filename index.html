@@ -1,0 +1,43 @@
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no, shrink-to-fit=no" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta charset="utf-8">
+
+    <title>Grid Scout</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        :not(:defined) { display: none }
+
+        html, body {
+            --fg-col: #1e90ff;
+            --bg-col: #181a0f;
+
+            background: var(--bg-col);
+            color: var(--fg-col);
+
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            touch-action: none;
+            -webkit-user-select: none;
+            user-select: none;
+            box-sizing: border-box;
+        }
+
+        * { box-sizing: border-box }
+    </style>
+    <script type="module" src="src/main.js"></script>
+</head>
+<body>
+    <game-container size="9" mines="10"></game-container>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
