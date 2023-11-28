@@ -4,7 +4,7 @@ const STYLES_UUID = `S${crypto.randomUUID()}`;
 const getStyles = () => (`
     <style>
         .${STYLES_UUID} {
-            --container-height: 80px;
+            --container-height: 120px;
             --container-padding: 8px;
             display: block;
             font-size: 48px;
@@ -18,6 +18,7 @@ const getStyles = () => (`
             align-items: center;
             height: var(--container-height);
             padding: var(--container-padding);
+            padding-top: 48px;
         }
 
         .button-${STYLES_UUID} {

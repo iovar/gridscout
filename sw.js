@@ -1,4 +1,4 @@
-const cacheName = 'scoutgrid-v2';
+const cacheName = 'scoutgrid-v3';
 
 const cachedFiles = [
     './',

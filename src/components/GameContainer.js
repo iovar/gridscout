@@ -21,7 +21,7 @@ const getStyles = () => (`
         .game-container-${STYLES_UUID} {
             aspect-ratio: 1;
             max-width: 100%;
-            height: calc(100% - 80px);
+            height: calc(100% - 120px);
             margin: auto;
         }
 
